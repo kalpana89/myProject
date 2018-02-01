@@ -6,4 +6,15 @@
   <packaging>war</packaging>
   <name>My Project</name>
   <description>This Project is to give demo about maven capabilities</description>
+  <distributionManagement>
+    <snapshotRepository>
+      <id>nexus-snapshots</id>
+      <url>http://localhost:8081/repository/maven-releases/</url>
+    </snapshotRepository>
+    <repository>
+      <id>nexus-releases</id>
+      <url>http://localhost:8081/repository/maven-snapshots/</url>
+    </repository>
+  </distributionManagement>
+    
 </project>
